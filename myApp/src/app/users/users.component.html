@@ -1,0 +1,5 @@
+<div class="row" *ngFor="let item of users">
+  <div class="col">
+      <app-user-item [user]="item" (delete)="onDelete($event)"></app-user-item>
+  </div>
+</div> 
